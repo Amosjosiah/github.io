@@ -15,6 +15,7 @@
     .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}.skill-group h3{margin:0 0 14px}.skill-pills{display:flex;gap:9px;flex-wrap:wrap}.skill-pills span{padding:8px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);color:#e5ebf7;font-size:.9rem}
     .timeline{display:grid;gap:16px}.role{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:24px;border:1px solid var(--line);background:rgba(18,26,46,.7);border-radius:18px}.role time{color:var(--accent);font-size:.88rem;font-weight:750}.role h3{margin:0 0 4px}.company{color:var(--muted);margin-bottom:12px}.role ul{margin:0;padding-left:20px;color:#dce4f2}.role li+li{margin-top:6px}
     .note{border-left:3px solid var(--accent2);padding:14px 18px;background:rgba(169,185,255,.07);color:var(--muted);border-radius:0 12px 12px 0;margin-top:18px}.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}.contact-panel{padding:28px;border-radius:22px;background:linear-gradient(135deg,rgba(140,224,194,.13),rgba(169,185,255,.09));border:1px solid var(--line)}.contact-panel h3{font-size:1.5rem;margin:0 0 8px}.contact-panel p{color:var(--muted)}.contact-links{display:grid;gap:12px;align-content:center}.contact-link{padding:16px;border:1px solid var(--line);border-radius:14px;text-decoration:none;background:var(--panel);overflow-wrap:anywhere}.contact-link small{display:block;color:var(--muted);margin-bottom:3px}.contact-link:hover{border-color:var(--accent)}
+    .writer-invite{display:block;margin:0 auto 56px;padding:28px 30px;border:1px solid rgba(140,224,194,.55);border-radius:22px;text-decoration:none;background:linear-gradient(110deg,rgba(140,224,194,.13),rgba(169,185,255,.1));box-shadow:0 18px 50px rgba(0,0,0,.16);transition:transform .22s ease,border-color .22s ease}.writer-invite:hover{transform:translateY(-4px);border-color:var(--accent)}.writer-invite .writer-label{display:block;color:var(--accent);font-size:.78rem;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.writer-invite strong{display:block;font-size:clamp(1.45rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.035em;margin:8px 0}.writer-invite .writer-sub{display:flex;justify-content:space-between;gap:16px;align-items:center;color:var(--muted)}.writer-invite .writer-arrow{color:var(--accent);font-size:1.5rem;font-weight:800}.writing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.writing-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.writing-card .writing-icon{font-size:1.5rem;color:var(--accent)}.writing-card h3{margin:10px 0 7px}.writing-card p{color:var(--muted);margin:0}.writing-sample{margin-top:22px;padding:24px;border:1px solid var(--line);border-radius:18px;background:rgba(18,26,46,.72)}.writing-sample h3{margin-top:0}.writing-sample p,.writing-sample li{color:var(--muted)}
     footer{padding:28px 0 42px;color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.disclaimer{font-size:.86rem;color:var(--muted)}.backtop{color:var(--accent);text-decoration:none}
     /* Portfolio visuals: lightweight inline illustrations, no external image downloads */
     .hero-visual{margin-top:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(17,27,48,.96),rgba(24,39,64,.88));padding:18px;overflow:hidden;position:relative}
@@ -46,7 +47,7 @@
       .reveal{opacity:1;transform:none}
     }
     @media(max-width:800px){.hero{grid-template-columns:1fr;padding:62px 0}.profile-card{max-width:520px}.grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:8px}}
-    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{align-items:flex-start;flex-direction:column}nav{gap:14px}.grid,.two-col{grid-template-columns:1fr}section{padding:48px 0}.hero h1{font-size:2.8rem}.card{padding:20px}}
+    @media(max-width:560px){.writing-grid{grid-template-columns:1fr}.writer-invite{padding:22px}.writer-invite .writer-sub{align-items:flex-start}.wrap{width:min(100% - 28px,var(--max))}.nav{align-items:flex-start;flex-direction:column}nav{gap:14px}.grid,.two-col{grid-template-columns:1fr}section{padding:48px 0}.hero h1{font-size:2.8rem}.card{padding:20px}}
   </style>
 </head>
 <body>
@@ -54,7 +55,7 @@
     <div class="nav">
       <a class="brand" href="#home" aria-label="Home">AMOS<span>.</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#work">Work samples</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#work">Work samples</a><a href="#technical-writing">Technical Writing</a><a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -102,6 +103,35 @@
         </div>
       </aside>
     </div>
+
+    <div class="wrap">
+      <a class="writer-invite" href="#technical-writing" aria-label="Meet Josiah as a Technical Writer and read about his technical writing skills">
+        <span class="writer-label">Another side of my work</span>
+        <strong>MEET JOSIAH AS A TECHNICAL WRITER</strong>
+        <span class="writer-sub"><span>Clear documentation. Helpful guides. Technology explained for real people.</span><span class="writer-arrow" aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+
+    <section id="technical-writing"><div class="wrap">
+      <div class="section-head"><div class="kicker">Technical writing</div><h2>Turning complex technology into clear, useful content.</h2>
+        <p>I approach technical writing with a focus on clarity, structure, accuracy, and the reader’s needs. My aim is to help people understand a product, follow a process, and solve a problem without unnecessary jargon.</p>
+      </div>
+      <div class="writing-grid">
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">▤</div><h3>Documentation & user guides</h3><p>Organize product information into step-by-step instructions, setup guides, FAQs, and help-centre content that readers can follow.</p></article>
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">⌘</div><h3>Technical concepts, made clear</h3><p>Explain software features, AI concepts, and digital workflows in plain language while preserving important technical meaning.</p></article>
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">✎</div><h3>Editing & content structure</h3><p>Improve flow, headings, terminology, consistency, grammar, and readability so information is easy to scan and maintain.</p></article>
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">☷</div><h3>Process and workflow writing</h3><p>Turn complex tasks into logical procedures with clear prerequisites, numbered steps, expected outcomes, and troubleshooting notes.</p></article>
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">◎</div><h3>Audience-focused communication</h3><p>Adapt tone and detail for developers, product teams, customers, and non-technical readers without losing accuracy.</p></article>
+        <article class="writing-card"><div class="writing-icon" aria-hidden="true">✓</div><h3>Accuracy & quality review</h3><p>Review technical content for ambiguity, unsupported statements, inconsistent terms, missing steps, and opportunities to improve usability.</p></article>
+      </div>
+      <div class="writing-sample">
+        <div class="kicker">Example of my writing approach</div><h3>From a technical feature to a user-friendly instruction</h3>
+        <p><strong>Less helpful:</strong> “Configure the integration parameters before initiating synchronization.”</p>
+        <p><strong>Clearer:</strong> “Open <em>Settings</em>, choose <em>Integrations</em>, and enter the required connection details. Save your changes, then select <em>Sync</em> to start synchronization.”</p>
+        <p class="disclaimer">This is an illustrative example of writing style, not a claim about published client work.</p>
+      </div>
+      <div class="note">I can contribute to technical documentation, knowledge-base articles, product guides, process documentation, and editing projects where complex information needs to become clear and practical.</div>
+    </div></section>
 
     <section id="about"><div class="wrap">
       <div class="section-head"><div class="kicker">About me</div><h2>Careful reading. Structured thinking. Clear reporting.</h2>
